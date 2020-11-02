@@ -13,3 +13,8 @@ class ProductPageLocators():
     PRODUCT_NAME_IN_ADD_TO_BASKET_MESSAGE = (By.CSS_SELECTOR, "div.alert.alert-safe.alert-noicon.alert-success.fade.in>.alertinner>strong")
     PRODUCT_COST = (By.CSS_SELECTOR, ".price_color")
     PRODUCT_COST_IN_BASKET_COST_MESSAGE = (By.CSS_SELECTOR, ".alert-info .alertinner strong")
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, "div.alert.alert-safe.alert-noicon.alert-success.fade.in>.alertinner")
+
+class BasePageLocators():
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link")
