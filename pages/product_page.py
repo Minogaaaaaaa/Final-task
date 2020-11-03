@@ -1,6 +1,6 @@
 from .base_page import BasePage
 from.locators import ProductPageLocators
-from selenium.webdriver.common.by import By
+from .basket_page import BasketPage
 
 class ProductPage(BasePage):
 

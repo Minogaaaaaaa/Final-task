@@ -8,8 +8,12 @@ from .locators import BasePageLocators
 
 class BasePage():
 
+    def basket_open(self):
+        link = self.browser.find_element(*BasePageLocators.BASKET_BTN)
+        link.click()
+    
     def go_to_login_page(self):
-        link = self.browser.find_element(*BasePageLocators.LOGIN_LINK_INVALID)
+        link = self.browser.find_element(*BasePageLocators.LOGIN_LINK)
         link.click()
 
     def is_disappeared(self, how, what, timeout=4):
